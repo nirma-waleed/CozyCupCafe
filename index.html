@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cup Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="theme-button" type="button">Toggle Light/Dark Mode</button>
+
+    <header>
+        <h1>Welcome to Cozy Cup Cafe</h1>
+        <p id="status"></p>
+        <p>Fresh coffee, delicious pastries, and a comfortable place to relax and enjoy your day.</p>
+    </header>
+
+    <main>
+        <section class="welcome-image-section">
+            <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=85"
+                alt="Coffee cup and freshly prepared coffee"
+                class="cafe-image"
+            >
+        </section>
+
+        <article>
+            <h2>About Our Cafe</h2>
+            <p>
+                Cozy Cup Cafe is a friendly place where customers can enjoy
+                freshly prepared coffee, tasty pastries, and a peaceful environment.
+            </p>
+
+            <p id="extra-text" hidden>
+                We carefully select fresh ingredients and prepare our drinks
+                and pastries with care. Our cafe is also a comfortable place
+                for students, friends, and families to spend time together.
+            </p>
+
+            <button id="read-more-button" type="button">Read More</button>
+        </article>
+
+        <section>
+            <h2>Our Menu</h2>
+
+            <div id="filters">
+                <button class="filter-btn active" data-category="All" type="button">All</button>
+                <button class="filter-btn" data-category="Drinks" type="button">Drinks</button>
+                <button class="filter-btn" data-category="Pastries" type="button">Pastries</button>
+            </div>
+
+            <div class="table-container">
+                <table id="menu-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="menu-row" data-category="Drinks">
+                            <td>Espresso</td>
+                            <td>Drinks</td>
+                            <td>$3</td>
+                        </tr>
+                        <tr class="menu-row" data-category="Drinks">
+                            <td>Cappuccino</td>
+                            <td>Drinks</td>
+                            <td>$5</td>
+                        </tr>
+                        <tr class="menu-row" data-category="Drinks">
+                            <td>Fresh Lemonade</td>
+                            <td>Drinks</td>
+                            <td>$4</td>
+                        </tr>
+                        <tr class="menu-row" data-category="Pastries">
+                            <td>Croissant</td>
+                            <td>Pastries</td>
+                            <td>$4</td>
+                        </tr>
+                        <tr class="menu-row" data-category="Pastries">
+                            <td>Chocolate Cake</td>
+                            <td>Pastries</td>
+                            <td>$6</td>
+                        </tr>
+                        <tr class="menu-row" data-category="Pastries">
+                            <td>Blueberry Muffin</td>
+                            <td>Pastries</td>
+                            <td>$3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Place Your Order</h2>
+            <p>Select the items you want:</p>
+
+            <div class="order-item">
+                <label><input type="checkbox" class="menu-item" value="3"> Espresso - $3</label>
+            </div>
+            <div class="order-item">
+                <label><input type="checkbox" class="menu-item" value="5"> Cappuccino - $5</label>
+            </div>
+            <div class="order-item">
+                <label><input type="checkbox" class="menu-item" value="4"> Fresh Lemonade - $4</label>
+            </div>
+            <div class="order-item">
+                <label><input type="checkbox" class="menu-item" value="4"> Croissant - $4</label>
+            </div>
+            <div class="order-item">
+                <label><input type="checkbox" class="menu-item" value="6"> Chocolate Cake - $6</label>
+            </div>
+            <div class="order-item">
+                <label><input type="checkbox" class="menu-item" value="3"> Blueberry Muffin - $3</label>
+            </div>
+
+            <p id="total">Total: $0</p>
+        </section>
+
+        <section>
+            <h2>Feedback / Contact Form</h2>
+
+            <form id="feedback-form" novalidate>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="birth-year">Birth Year:</label>
+                <input type="text" id="birth-year" placeholder="e.g. 2002">
+
+                <label for="special-notes">Special Requests:</label>
+                <textarea id="special-notes" maxlength="100" placeholder="Enter your special requests"></textarea>
+
+                <p id="character-count">100 characters remaining</p>
+
+                <button type="submit">Submit</button>
+
+                <p id="form-message" aria-live="polite"></p>
+                <p id="age-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cozy Cup Cafe | Fresh coffee, happy moments.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
