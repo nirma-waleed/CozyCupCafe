@@ -8,6 +8,14 @@ Cozy Cup Cafe is a simple and interactive cafe website designed to provide visit
 
 Cozy Cup Cafe is a responsive cafe website developed using HTML, CSS, and JavaScript. This project demonstrates front-end web development concepts and JavaScript DOM manipulation through interactive features.
 
+## Live Demo
+
+[View Cozy Cup Cafe](https://cozy-cup-cafe-eight.vercel.app/)
+
+## GitHub Repository
+
+[View Source Code on GitHub](https://github.com/nirma-waleed/CozyCupCafe)
+
 ## Technologies Used
 
 - HTML5
@@ -36,6 +44,9 @@ Cozy-Cup-Cafe/
 ├── script.js
 └── README.md
 ```
+
+
+
 
 ## Learning Objectives
 
